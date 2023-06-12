@@ -295,6 +295,10 @@ background-position-y: 100%;
         margin-right: 36px;
         margin-bottom: 0;
     }
+
+    .contactsSection{
+        background-attachment: fixed;
+    }
     
 }
 
