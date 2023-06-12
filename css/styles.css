@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+p{
+    line-height: 1.6em;
+    color:#333333;
+}
+
+ul {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.section{
+    padding: 30px 0;
+}
+
+.container{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header{
+    /* background-image: url(../images/header01.jpg); */
+    /* background-size: cover;  */
+    /* background-attachment: fixed; */
+    /* background-position: center; */
+}
+
+.sider{ 
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.slider .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    animation: slide 10s infinite;
+  }
+
+  .slider .slide:nth-child(1) {
+    background-image: url('../images/header01.jpg');
+    animation-delay: -0;
+  }
+  
+  .slider .slide:nth-child(2) {
+    background-image: url('../images/header02.jpg');
+    animation-delay: -5s;
+  }
+    
+  .slider .slide:nth-child(3) {
+    background-image: url('../images/header03.jpg');
+    animation-delay: -10s;
+  }
+
+  @keyframes slide {
+    0%, 15%, 100% {
+      transform: translateX(0);
+      animation-timing-function: ease;
+    }
+    20% {
+      transform: translateX(-100%);
+      animation-timing-function: step-end;
+    }
+    95% {
+      transform: translateX(100%);
+      animation-timing-function: ease;
+    }
+  }
+
+.logo{
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 36px;
+}
+
+.mainTitle{
+    text-transform: uppercase;
+    font-size: 48px;
+    margin-bottom: 56px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.afterTitle{
+    color: #ffffff;
+    font-size: 32px;
+    text-align: center;
+}
+
+.sectionAbout{
+    margin-top: 30px;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+    border-bottom: 1px rgba(0, 0, 0, 0.09) solid;
+}
+
+.aboutTitle{
+    color: #333333;
+    font-size: 60px;
+    margin-bottom: 30px;
+    line-height: 1em;
+}
+
+.aboutText{
+    font-size: 16px;
+    line-height: 1.6em;
+}
+
+.companylist{
+    display: flex;
+    flex-direction: column;
+}
+
+.companyItem + .companyItem{
+    margin-top: 30px;
+}
+
+.companyLogo{
+    margin-bottom: 24px;
+}
+
+.companyDescription{
+    font-size: 14px;
+}
+
+.contactsSection{
+    background-image: url(../images/contactsSection.jpg);
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contactsContainer{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+.contactsTitle{
+    color: #ffffff;
+    margin-bottom: 25px;
+    font-size: 36px;
+}
+
+.afterContactsTitle{
+    color: #ffffff;
+    font-size: 26px;
+    border-bottom: 1px rgba(255, 255, 255, 0.10) solid;
+}
+
+.contactsSection{
+    padding: 120px 0;
+}
+
+.adressList{
+    margin: 5px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.adressItem{
+    color: #ffffff;
+}
+
+.adressItem + .adressItem{
+    margin-top: 5px;
+}
+
+.contactsList{
+    display: flex;
+    flex-direction: column;
+}
+
+.contactsItem + .contactsItem{
+    margin-top: 5px;
+}
+
+.contactsLink{
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.footerText{
+    text-align: center;
+    color:rgba(51, 51, 51, 0.29);
+}
+
+@media screen and (min-width: 480px) {
+    .container{
+        width: 480px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .container{
+        width: 708px;
+        padding: 0 30px;
+    }
+
+    .header{
+        height: 700px;
+    }
+
+    .about{
+        flex-direction: row;
+    }
+
+    .aboutTitle{
+        margin-right: 36px;
+        width: 50%;
+        margin-bottom: 0;  
+    }
+    
+    .aboutText{
+        width: 50%;
+    }
+
+    .companylist{
+        flex-direction: row;
+    }
+
+    .companyItem + .companyItem{
+        margin-top: 0;
+        margin-left: 24px;
+    }
+    
+
+    .contactsContainer{
+        flex-direction: row;
+    }
+
+    .contactsTitle{
+        margin-right: 36px;
+        margin-bottom: 0;
+    }
+    
+}
