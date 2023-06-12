@@ -8,6 +8,16 @@ a{
     text-decoration: none;
 }
 
+body{
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+h2{
+    font-weight: 300;
+}
+
+
+
 p,
 h1,
 h2,
@@ -45,13 +55,13 @@ img {
 }
 
 .header{
-    /* background-image: url(../images/header01.jpg); */
-    /* background-size: cover;  */
-    /* background-attachment: fixed; */
-    /* background-position: center; */
+    background-image: url(../images/header01.jpg); 
+    background-size: cover; 
+    /* background-attachment: fixed;  */
+    background-position: 50% 50%;
 }
 
-.sider{ 
+/* .slider{ 
     width: 100vw;
     height: 100vh;
     position: relative;
@@ -82,9 +92,9 @@ img {
   .slider .slide:nth-child(3) {
     background-image: url('../images/header03.jpg');
     animation-delay: -10s;
-  }
+  } */
 
-  @keyframes slide {
+  /* @keyframes slide {
     0%, 15%, 100% {
       transform: translateX(0);
       animation-timing-function: ease;
@@ -97,7 +107,7 @@ img {
       transform: translateX(100%);
       animation-timing-function: ease;
     }
-  }
+  } */
 
 .logo{
     margin: 0 auto;
@@ -112,11 +122,12 @@ img {
     margin-bottom: 56px;
     color: #ffffff;
     text-align: center;
+    font-weight: 700;
 }
 
 .afterTitle{
     color: #ffffff;
-    font-size: 32px;
+    font-size: 37px;
     text-align: center;
 }
 
@@ -158,6 +169,10 @@ img {
 
 .companyDescription{
     font-size: 14px;
+}
+
+.fisherLogo{
+    height: 74px;
 }
 
 .contactsSection{
@@ -234,9 +249,13 @@ img {
         width: 708px;
         padding: 0 30px;
     }
+    .mainTitle{
+        margin-bottom: 155px;
+    }
 
-    .header{
-        height: 700px;
+    .afterTitle{
+        font-size: 55px;
+        margin-bottom: 25px;
     }
 
     .about{
@@ -272,4 +291,10 @@ img {
         margin-bottom: 0;
     }
     
+}
+
+@media screen and (min-width: 1024px){
+    .container{
+        width: 960px;
+    }
 }
