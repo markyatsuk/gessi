@@ -4,6 +4,7 @@
 }
 
 a{
+    display: block;
     cursor: pointer;
     text-decoration: none;
 }
@@ -172,7 +173,7 @@ img {
 }
 
 .fisherLogo{
-    height: 74px;
+    height: 105px;
 }
 
 .contactsSection{
