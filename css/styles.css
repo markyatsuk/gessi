@@ -57,6 +57,8 @@ img {
 }
 
 
+
+
 .my-carousel{
     padding: 0;
 }
@@ -64,7 +66,7 @@ img {
 .carousel-item{
     
     background-size: cover; 
-    /* background-attachment: fixed;  */
+    background-attachment: fixed; 
     background-position: 50% 50%;
 }
 
@@ -86,7 +88,7 @@ img {
 .logo{
     margin: 0 auto;
     width: 300px;
-    height: 100px;
+    height: 80px;
     /* margin-top: -200px; */
 }
 
@@ -99,24 +101,24 @@ img {
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: end;
+    justify-content: center;
 }
 
 .carousel-item.active {
     opacity: 1;
 }
 
-.carousel-item1 {
+/* .carousel-item1 {
     background-image: url(../images/contempo_render_2023.jpg); 
-}
+} */
 
 .carousel-item2 {
     background-image: url(../images/LX8610_Lavello_Workstation.jpg); 
 }
 
-.carousel-item3 {
+/* .carousel-item3 {
     background-image: url(../images/header02.jpg); 
-}
+} */
 
 .stack{
     height: 540px;
@@ -200,7 +202,7 @@ img {
 
 .aboutTitle{
     color: #333333;
-    font-size: 60px;
+    font-size: 54px;
     margin-bottom: 30px;
     line-height: 1em;
 }
@@ -221,23 +223,23 @@ img {
 
 .companyLogo{
     height: 75px;
+    margin: 0 auto;
     margin-bottom: 24px;
+    
 }
 
 .companyDescription{
     font-size: 14px;
 }
 
-.fisherLogo{
-    height: 105px;
-}
+
 
 .contactsSection{
-    background-image: url(../images/contactsSection.jpg);
+    background-image: url(../images/contempo_render_2023.jpg);
     /* background-position: 50% 100%; */
-    background-position: top 100% right 50%;
+    /* background-position: top 100% right 50%;
 background-position-x: 50%;
-background-position-y: 100%;
+background-position-y: 100%; */
     background-repeat: no-repeat;
     background-size: cover;
     /* background-attachment: fixed; */
@@ -305,7 +307,22 @@ background-position-y: 100%;
         width: 480px;
     }
 }
+
+@media screen and (max-width: 767px) {
+    .container{
+        width: 480px;
+    }
+    .airoLogo{
+        width: 290px;
+        height: 115px;
+    }
+}
+
 @media screen and (min-width: 768px) {
+    .stack{
+        height: 640px;
+    }
+
     .container{
         width: 708px;
         padding: 0 30px;
@@ -337,6 +354,10 @@ background-position-y: 100%;
         flex-direction: row;
     }
 
+    .companyItem{
+        flex-basis: calc((100% - 48px) / 3);
+    }
+    
     .companyItem + .companyItem{
         margin-top: 0;
         margin-left: 24px;
@@ -357,6 +378,10 @@ background-position-y: 100%;
 
     .contactsSection{
         background-attachment: fixed;
+    }
+    
+    .carousel-item{
+        height: 640px;
     }
     
 }
