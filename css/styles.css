@@ -309,9 +309,6 @@ background-position-y: 100%; */
 }
 
 @media screen and (max-width: 767px) {
-    .container{
-        width: 480px;
-    }
     .airoLogo{
         width: 290px;
         height: 115px;
