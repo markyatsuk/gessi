@@ -96,7 +96,7 @@ img {
     opacity: 0;
     transition: opacity 2000ms  cubic-bezier(0.4, 0, 0.2, 1);
     width: calc(100% - 70px);
-    height: 540px;
+    height: 640px;
     display: flex;
     align-items: start;
     flex-direction: column;
@@ -112,7 +112,7 @@ img {
     /* background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/aira-bg.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../images/aira-bg.jpg); */
     background-image: url(../images/aira-bg.jpg); 
-    background-position: 50% 50%;
+    background-position: 10% 70%;
 }
 
 .carousel-item2 {
@@ -124,7 +124,7 @@ img {
 } */
 
 .stack{
-    height: 610px;
+    height: 710px;
 }
 
 .mainTitle{
@@ -195,21 +195,14 @@ img {
 
 
 .contactsSection{
-    
     background-image: url(../images/contempo_render_2023.jpg);
-    /* background-position: 50% 100%; */
-    /* background-position: top 100% right 50%;
-background-position-x: 50%;
-background-position-y: 100%; */
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-attachment: fixed; */
 }
 
 .contactsContainer{
     display: flex;
     flex-direction: column;
-
     justify-content: center;
 }
 
@@ -350,7 +343,10 @@ background-position-y: 100%; */
     .carousel-item{
         height: 640px;
     }
-    
+
+    .carousel-item1 {
+        background-position: 100% 100%;
+    }
 }
 
 @media screen and (min-width: 1024px){
@@ -373,8 +369,6 @@ background-position-y: 100%; */
         justify-content: center;
     }
     .carousel-item1 {
-        /* background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/aira-bg.jpg);
-        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../images/aira-bg.jpg); */
         background-image: url(../images/aira-bg.jpg); 
         background-position: 0% 0%;
     }
