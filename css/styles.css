@@ -56,17 +56,14 @@ img {
     padding: 0 15px;
 }
 
-
-
-
 .my-carousel{
     padding: 0;
 }
 
 .carousel-item{
     background-size: cover; 
-    /* background-attachment: fixed;  */
     background-position: 50% 50%;
+    width: 100%;
 }
 
 .my-carousel .carousel-item{
@@ -84,44 +81,39 @@ img {
 }
 
 .logo{
-    /* margin: 0 auto; */
     width: 250px;
     height: auto;
-    /* margin-top: -200px; */
+    padding-top: 35px;
+    padding-left: 35px;
 }
 
 .carousel-item {
-    padding: 35px;
     position: absolute;
     opacity: 0;
     transition: opacity 2000ms  cubic-bezier(0.4, 0, 0.2, 1);
     width: calc(100% - 70px);
-    height: 640px;
+    height: 710px;
     display: flex;
     align-items: start;
     flex-direction: column;
     justify-content: start;
-    
 }
 
 .carousel-item.active {
     opacity: 1;
+    width: 100%;
 }
 
 .carousel-item1 {
-    /* background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/aira-bg.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../images/aira-bg.jpg); */
     background-image: url(../images/aira-bg.jpg); 
     background-position: 10% 70%;
+    width: 100%;
 }
 
 .carousel-item2 {
+    width: 100%;
     background-image: url(../images/LX8610_Lavello_Workstation.jpg); 
 }
-
-/* .carousel-item3 {
-    background-image: url(../images/header02.jpg); 
-} */
 
 .stack{
     height: 710px;
@@ -140,13 +132,17 @@ img {
     color: #ffffff;
     font-size: 37px;
     width: 100%;
-    height: 100%;
     text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
+    top: 20%;
+}
+
+.aira-span{
+    width: 145px;
+    height: auto;
+    display: inline-block;
 }
 
 .sectionAbout{
@@ -191,8 +187,6 @@ img {
 .companyDescription{
     font-size: 14px;
 }
-
-
 
 .contactsSection{
     background-image: url(../images/contempo_render_2023.jpg);
@@ -270,17 +264,10 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-    .stack{
-        height: 710px;
-    }
-
     .logo{
-        /* margin: 0 auto; */
         width: 300px;
         height: auto;
-        /* margin-top: -200px; */
     }
-    
 
     .container{
         width: 708px;
@@ -341,7 +328,8 @@ img {
     }
     
     .carousel-item{
-        height: 640px;
+        height: 710px;
+        
     }
 
     .carousel-item1 {
@@ -364,9 +352,6 @@ img {
     }
     .afterTitle{
         height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
     .carousel-item1 {
         background-image: url(../images/aira-bg.jpg); 
