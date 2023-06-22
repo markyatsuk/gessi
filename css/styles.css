@@ -86,7 +86,7 @@ img {
 .logo{
     /* margin: 0 auto; */
     width: 250px;
-    height: 70px;
+    height: auto;
     /* margin-top: -200px; */
 }
 
@@ -109,9 +109,10 @@ img {
 }
 
 .carousel-item1 {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/aira-bg.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../images/aira-bg.jpg);
-    /* background-image: url(../images/aira-bg.jpg);  */
+    /* background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/aira-bg.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../images/aira-bg.jpg); */
+    background-image: url(../images/aira-bg.jpg); 
+    background-position: 50% 50%;
 }
 
 .carousel-item2 {
@@ -138,9 +139,14 @@ img {
 .afterTitle{
     color: #ffffff;
     font-size: 37px;
+    width: 100%;
+    height: 100%;
     text-align: center;
-    position: absolute;
-    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
 }
 
 .sectionAbout{
@@ -266,7 +272,7 @@ background-position-y: 100%; */
 @media screen and (max-width: 767px) {
     .airoLogo{
         max-width: 220px;
-        /* height: 115px; */
+        height: auto;
     }
 }
 
@@ -278,7 +284,7 @@ background-position-y: 100%; */
     .logo{
         /* margin: 0 auto; */
         width: 300px;
-        height: 80px;
+        height: auto;
         /* margin-top: -200px; */
     }
     
@@ -324,7 +330,8 @@ background-position-y: 100%; */
     }
 
     .companyLogo{
-        height: 115px;
+        width: auto;
+        height: 100px;
     }
 
     .contactsContainer{
@@ -351,7 +358,24 @@ background-position-y: 100%; */
         width: 960px;
     }
 
+    .companyLogo{
+        width: auto;
+        height: 150px;
+    }
+
     .carousel-item{
         background-position: 100% 45%;
+    }
+    .afterTitle{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .carousel-item1 {
+        /* background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/aira-bg.jpg);
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../images/aira-bg.jpg); */
+        background-image: url(../images/aira-bg.jpg); 
+        background-position: 0% 0%;
     }
 }
