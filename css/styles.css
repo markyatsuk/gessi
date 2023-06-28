@@ -166,7 +166,7 @@ img {
 
 .aboutCompanyImg{
     margin-bottom: 30px;
-}
+}   
 
 .aboutText{
     font-size: 16px;
@@ -174,7 +174,7 @@ img {
 }
 
 .aboutTextSpan{
-    font-size: 18px;
+    font-size: 24px;
     line-height: 1.6em;
     font-weight: 600;
 }
@@ -319,6 +319,10 @@ img {
         width: 50%;
         margin-bottom: 0;  
     }
+
+    .aboutCompanyImg{
+        margin-bottom: 0px;
+    }   
     
     .aboutText{
         width: 50%;
@@ -378,6 +382,10 @@ img {
         background-image: url(../images/aira-bg.jpg); 
         background-position: 0% 0%;
     }
+
+    .aboutCompanyImg{
+        width: 75%;
+    }   
 }
 
 @media screen and (min-width: 1440px){
