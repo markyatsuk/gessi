@@ -383,6 +383,10 @@ img {
         background-position: 0% 0%;
     }
 
+    .aboutCompanyImgContainer{
+        margin-right: 0;
+    }
+
     .aboutCompanyImg{
         width: 75%;
     }   
