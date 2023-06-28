@@ -75,7 +75,7 @@ img {
 }
 
 .logo{
-    width: 250px;
+    width: 200px;
     height: auto;
     padding-top: 35px;
     padding-left: 35px;
@@ -171,6 +171,12 @@ img {
 .aboutText{
     font-size: 16px;
     line-height: 1.6em;
+}
+
+.aboutTextSpan{
+    font-size: 18px;
+    line-height: 1.6em;
+    font-weight: 600;
 }
 
 .companylist{
@@ -280,7 +286,12 @@ img {
 
 @media screen and (min-width: 768px) {
     .logo{
-        width: 300px;
+        width: 250px;
+        height: auto;
+    }
+
+    .logo_gessi{
+        width: 200px;
         height: auto;
     }
 
@@ -362,9 +373,7 @@ img {
     .carousel-item{
         background-position: 100% 45%;
     }
-    .afterTitle{
-        height: 100%;
-    }
+    
     .carousel-item1 {
         background-image: url(../images/aira-bg.jpg); 
         background-position: 0% 0%;
