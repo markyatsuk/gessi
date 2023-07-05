@@ -242,6 +242,10 @@ img {
     color: #ffffff;
 }
 
+.nipSpan{
+    color: inherit;
+}
+
 .adressItem + .adressItem{
     margin-top: 5px;
 }
