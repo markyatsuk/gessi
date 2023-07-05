@@ -243,6 +243,10 @@ img {
 }
 
 .nipSpan{
+    text-decoration: none; /* Убирает подчеркивание для ссылок */
+    -webkit-touch-callout: none; /* Отключает выделение при долгом нажатии на iOS */
+    -webkit-user-select: none; /* Отключает выделение текста в Safari */
+    user-select: none;
     color: inherit;
 }
 
