@@ -182,11 +182,21 @@ img {
 .companylist{
     display: flex;
     flex-direction: column;
+    justify-items: stretch;
 }
+
+.companyItem{
+    display: flex;
+    flex-direction: column;    
+} 
 
 .companyItem + .companyItem{
     margin-top: 30px;
-}
+} 
+
+.companyItem > div {
+    margin-bottom: 15px;
+  }
 
 .companyLogo{
     height: 75px;
@@ -201,6 +211,26 @@ img {
 
 .companyDescription{
     font-size: 14px;
+}
+
+.downloadLink{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    margin-top: auto;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.downloadLink:hover{
+    transform: scale(1.05);
+}
+
+.downloadIcon{
+    width: 30px;
+    height: auto;
+    margin-right: 12px;
 }
 
 .contactsSection{
@@ -243,7 +273,7 @@ img {
 }
 
 .nipSpan{
-    text-decoration: none; /* Убирает подчеркивание для ссылок */
+    text-decoration: none; 
     -webkit-touch-callout: none; /* Отключает выделение при долгом нажатии на iOS */
     -webkit-user-select: none; /* Отключает выделение текста в Safari */
     user-select: none;
