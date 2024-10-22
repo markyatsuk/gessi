@@ -92,7 +92,7 @@ img {
     flex-direction: column;
     justify-content: start;
     background-size: cover; 
-    /* background-position: 50% 50%; */
+    background-position: 50% 50%;
     background-repeat: no-repeat;
 }
 
@@ -103,7 +103,7 @@ img {
 
 .carousel-item1 {
     background-image: url(https://benthaus.kitchen/wp-content/uploads/benthaus-mg-7970-02.jpg); 
-    /* background-position: 10% 70%; */
+    background-position: 50% 50%;
     width: 100%;
 }
 
